@@ -1,0 +1,271 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    background-color: #F7F7F7; /* Light Background */
+    color: #333333; /* Dark Text */
+    line-height: 1.6;
+}
+
+/* Typography for Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant SC', serif;
+    font-weight: 300;
+}
+
+/* Header */
+/* Header */
+.header {
+    background-color: #333333 !important; /* Match button color */
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site-title {
+    font-size: 3rem;
+    color: white !important; /* Adjust text color to contrast with dark background */
+}
+
+/* Navbar */
+.navbar a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white; /* Dark Text */
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #666666; /* Lighter Text */
+}
+
+/* Hero Section */
+.hero {
+    padding: 2rem 0;
+    background-color: #EAEAEA; /* Subtle Blue */
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #333333; /* Dark Text */
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: #333333; /* Subtle Text */
+}
+
+/* Adjust container to ensure buttons stay aligned properly */
+.dashboard-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Space between buttons */
+    padding: 2rem 0;
+    background-color: #EAEAEA; /* Background for buttons */
+}
+
+/* Dashboard Card */
+.dashboard-card {
+    background-color: white; /* Card Background */
+    border-radius: 8px; /* Rounded Corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Soft Shadow */
+    padding: 2rem; /* Internal Spacing */
+    text-align: center; /* Center content */
+    max-width: 1250px; /* Restrict card width */
+    flex: 1 1 calc(25% - 1.5rem); /* Responsive card size */
+    margin: 1rem; /* Space between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 5px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
+
+/* Card Content Styling */
+.dashboard-card .card-title {
+    font-size: 1.5rem; /* Title Size */
+    font-weight: 400;
+    color: #333333; /* Dark Text */
+    margin-bottom: 0.5rem; /* Space below title */
+}
+
+.dashboard-card .card-description {
+    font-size: 1rem;
+    color: #666666; /* Subtle Text */
+    line-height: 1.4;
+    margin-bottom: 1rem; /* Space below description */
+}
+
+/* Card Action Buttons */
+.dashboard-card .actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between buttons */
+}
+
+
+/* Button Styles */
+.button {
+    font-family: 'Cormorant SC', serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #333333; /* Dark Button */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Make all buttons the same size */
+    text-align: center;
+    margin: 0 0.5rem; /* Adjust space between buttons */
+    min-width: 200px; /* Minimum width to prevent wrapping */
+    max-width: 400px; /* Prevent buttons from stretching too much */
+    /* white-space: nowrap;  Prevent text from breaking into multiple lines */
+    overflow-wrap: break-word;
+}
+
+.button:hover {
+    background-color: #666666; /* Lighter Button */
+}
+
+/* Footer */
+.footer {
+    background-color: #EAEAEA; /* Light Footer */
+    color: #333333;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+
+/* Horizontal Search Form */
+.search-form-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between fields */
+    padding: 1.5rem;
+}
+
+.form-group-inline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 180px; /* Minimum width for each input */
+}
+
+.form-group-inline label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+.form-group-inline select,
+.form-group-inline input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333333;
+}
+
+.search-btn-inline {
+    background-color: #333333;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Cormorant SC', serif;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn-inline:hover {
+    background-color: #666666;
+}
+
+/* Results Table */
+.results-table {
+	font-size: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.results-table th, .results-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.results-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.results-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.tabs-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+}
+.tab {
+    padding: 10px 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 2px solid #333333;
+    color: #333333;
+    border-radius: 8px;
+    background-color: #333333;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.tab.active {
+    background-color: #333333;
+    color: #333333;
+}
+.tab:hover {
+    background-color: #666666;
+    color: #666666;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+    margin: 20px auto;
+    max-width: 95%;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}

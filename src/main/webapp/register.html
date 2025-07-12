@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Railway Booking - Register</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Cormorant+SC:300,500" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="site-title">Online Railway Booking System</h1>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <p class="hero-title">Sign up to get started</p>
+        </div>
+    </section>
+    <section class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-card" style="width: 500px; margin: 0 auto;">
+                <h3 class="card-title">Register</h3>
+
+            <!-- Registration Form -->
+            <form method="POST" action="register.jsp" class="register-form">
+                <div class="form-group-inline">
+                    <label for="firstname" class="form-label">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" class="form-input" placeholder="Enter your first name" required>
+                </div>
+                <div class="form-group-inline">
+                    <label for="lastname" class="form-label">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" class="form-input" placeholder="Enter your last name" required>
+                </div>
+                <div class="form-group-inline">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group-inline">
+                    <label for="username" class="form-label">Username:</label>
+                    <input type="text" id="username" name="username" class="form-input" placeholder="Choose a username" required>
+                </div>
+                <div class="form-group-inline">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" id="password" name="password" class="form-input" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="button">Login</button><p class="form-footer">Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Online Railway Booking System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
